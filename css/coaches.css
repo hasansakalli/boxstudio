@@ -1,0 +1,75 @@
+#coaches{
+    display:grid;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    background-color: var(--secondary-color);
+    padding: 50px 25px;
+  
+    
+}
+
+#coaches .person_text{
+    margin-bottom: 25px;
+    color: var(--secondary-text-color);
+   
+}
+.gallery{
+    max-width: 1000px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    margin: 20px;
+    position: relative;
+    
+}
+.gallery img{
+    width: 100%;
+    border-radius: 15px;
+}
+.gallery i{
+    font-size: 30px;
+    padding: 2rem;
+    cursor: pointer;
+}
+.gallery i:hover{
+  color: var( --main-brand-color);
+  transition: all 200ms;
+}
+
+#trainerName{
+    
+    bottom:10%;
+    z-index: 2;
+    font-size: 30px;
+    color: var(--secondary-text-color);
+    left: 40%;
+
+}
+.trainerBg{
+    position: absolute;
+    bottom:10%;
+    z-index: 2;
+    width: 90%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+@media (max-width:800px){
+    .gallery i{
+        font-size: 15px;
+        padding: 2rem;
+        cursor: pointer;
+    }
+    #trainerName{
+    
+        font-size: 20px;
+    }
+    .trainerBg{
+        width: 88%;
+        height: 35px;
+    }
+}
+

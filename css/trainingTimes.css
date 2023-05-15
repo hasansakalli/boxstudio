@@ -1,0 +1,61 @@
+#trainingTimes{
+    display:grid;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 50px 25px;
+}
+
+#trainingTimes .person_text{
+  max-width: 100%;
+  padding: 0px 50px;
+  margin-top: 10px;
+   
+}
+.cards_times{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 25px;
+    gap: 20px;
+}
+.card_time{
+    width: 250px;
+    height: 300px;
+    background-color: var( --secondary-text-color);
+    padding: 20px;
+    transition: all 200ms ease-in;
+    color: var(--secondary-color);
+}
+.card_time:hover{
+ transform: scale(1.1);
+ transition: all 200ms ease-in;
+ cursor: pointer;
+ border-radius: 10px;
+ background-color: white;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.card_time i{
+    font-size: 30px;
+    margin-bottom: 10px;
+  
+}
+.card_time .time p{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.card_time h2{
+    margin-bottom: 10px;
+}
+
+@media (max-width:800px){
+    #trainingTimes .person_text{
+      
+      padding: 0px 10px;
+      margin-top: 20px;
+
+       
+    }
+}
